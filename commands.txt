@@ -1,0 +1,60 @@
+EPSIODE 1 :
+
+ In this we learn basics of react.
+ we use react using react cdn link.
+ CDN - content Delivery Network
+ Cross-origin 
+ async-defer
+
+---------------------------------------------------------------------------------
+
+EPISODE 2 :
+
+## In this we will create our own create react app.
+ 
+-> npm init -> to initialize npm , we confifure npm here
+
+## Now we install Bundler package "Parcel" , other Bundler available are webpack,viet etc.
+
+ # Parcel
+ - creating dev build
+ - host it on localhost server
+ - HMR : Hot Module Replacement (automatic refreshment on saving new changes)
+ - File watching Algorithm : written in c++
+ - Faster Build by Using Caching and create build of modified changes only. And it do all caching in .parcel-cache folder.
+ - Image Optimization
+ - Minification of files
+ - Bundling of Files
+ - compress the files
+ - Differencial bundling - to support older browsers also
+ - Support of host to HTTPS also
+ - tree shaking : remove unused code from code 
+ - Different dev and production bundle
+
+
+-> npm install -D parcel  (telling package manager (npm) to install parcel as dev dependency (-D))
+
+## when we install parcel we get a file package-lock.json and nod_modules too in project.
+
+## if we don't have nod_modules but have package.json and package-lock.json file we can generate nod_modules using npm install that's
+## why we need not to push nod_modules to github 
+
+-> npm install 
+
+## when we type npx parcel index.htm we execute parcel so it bundle our code using source file index.html and create build and host it
+## on server localhost:1234.
+
+-> npx parcel index.html
+
+## we are installing react now using/from npm and we install it as normal dependency not dev dependency (-D)
+
+-> npm install react
+-> npm i react-dom
+
+## we will create production Build now using :  (npx parcel index.html create development)
+
+-> npx parcel build index.html
+
+## "browserslist":[ "last 2 versions" ] this in package.json make or project compitable to work on last 2 vesrion of any browsers
+## we can write also like "last 2 chrome versions" it implie that our project work fine in last 2 version of chrome surely
+## don't sure about other browser version it may run or may not.
