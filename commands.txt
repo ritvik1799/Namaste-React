@@ -58,3 +58,40 @@ EPISODE 2 :
 ## "browserslist":[ "last 2 versions" ] this in package.json make or project compitable to work on last 2 vesrion of any browsers
 ## we can write also like "last 2 chrome versions" it implie that our project work fine in last 2 version of chrome surely
 ## don't sure about other browser version it may run or may not.
+
+----------------------------------------------------------------------------------------------------------------------
+
+EPISODE 3 : Laying The Foundation
+
+## Till now we are using npx index.html or npx parcel build index.html to start project but from now onword we are going to use script
+## tag to start project . we define script to start or build in package.json file under script attribute . suppose we define start tag
+## with value parcel.index.html to start project so from now we have to write npm run start or a shortcut npm start (but thsi work only
+##  for start not for other) to run our project instead of npx parcel index.html . This is industry standard.
+
+## React.createElement create Object for us , at the end of the day react element is object when we render it using react dom it 
+## become html. But it become very annoying and Clumsy so to avoid it we Use JSX.
+
+## Suppose we have to create Create React element h1 using JSX so we have to write just :
+## const heading = <h1>This is headin in JSX</h1>
+
+## JSX : It's a javaScript syntax to create react element. it make developer life easy to create and use react element in convinent way.
+## Jsx is not Html in js its syntax like html. ( React , JSX, HTML all are Different things)
+
+## More about JSX :
+## JSX is not a valid pure javaScript at the same time . Basically we say pure javaScript to that which can understood by js engine
+## and js engine can understand es6/ECMAscript ,sp browser unable to understand JSX it give syntax error as "<" for this.
+## so basically Our code is Transpiled into the code js engine can understand or browser can understand . and this conversion generally 
+## done by bundlers so this transpiling is done by Parcel and Parcel didn.t do this it give this duty to pacakge known as "Babel".
+## Babel is a javaScript compiler. so basicall it is responsible for taking our JSX code and Converting / transpiling it into code
+## that browser / JS engine / react can understand.
+## Working of JSX JSX code => React.createElement() => ReactElement-JS object => HtmlElemet(render)
+
+## React Components : It's a common say that everything in react is a component
+## Two way to create react component First one is Class based Components (OLD ONE) , Second one is Functional Components (NEW ONE)
+## class base use javaScript classes to create react component and Functional component use javaScript Function to create Components.
+
+## React Functional Components : it is just a javaScript Function. name should start from Capital letter. we can say react Functional
+## component is a javaScript Function which return react element.
+## we have to render react Components like root.render(<componentName/>). This is how babel understand that it is component.
+
+## component Composition : composing two or more than two components into each other or adding component inside component
