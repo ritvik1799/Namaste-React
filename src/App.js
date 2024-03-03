@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-import Header from "./components/Header";
-import Body from "./components/Body";
+import Header from './components/Header';
+import Body from './components/Body';
 
 /* Components of Our Food-Order App
  * Header
@@ -74,7 +74,7 @@ const Footer = () => {
 };
 
 const AppLayout = () => {
-  console.log(<Body />);
+  // console.log(<Body />);
   return (
     <div className="app">
       <Header />
@@ -84,5 +84,5 @@ const AppLayout = () => {
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<AppLayout />);
