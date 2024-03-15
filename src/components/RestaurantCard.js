@@ -1,4 +1,7 @@
 import { CDN_URL } from "../utils/constants";
+import { AiOutlineStar } from "react-icons/ai";
+import { FiClock } from "react-icons/fi";
+
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -31,7 +34,12 @@ const RestaurantCard = (props) => {
           <span>{avgRating} stars</span>
         </h4>
         <h4>{costForTwo}</h4>
-        <h4>{deliveryTime} minutes</h4>
+        <h4 className="time">
+          <span className="icons">
+            <FiClock />
+          </span>
+          <span> {deliveryTime} minutes</span>
+        </h4>
       </div>
     </div>
   );

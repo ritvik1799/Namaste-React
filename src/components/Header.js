@@ -16,13 +16,37 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#000",
+              }}
+              to="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About us</Link>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#000",
+              }}
+              to="/about"
+            >
+              About us
+            </Link>
           </li>
           <li>
-            <Link to="/contactUs">Contact Us</Link>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#000",
+              }}
+              to="/contactUs"
+            >
+              Contact Us
+            </Link>
           </li>
           <li>Cart</li>
           <button
