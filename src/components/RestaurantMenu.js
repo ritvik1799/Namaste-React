@@ -18,6 +18,7 @@ const RestaurantMenu = () => {
   };
 
   if (resMenu === null) return <Shimmer />;
+  const val = true;
   const itemList =
     resMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
       ?.itemCards;

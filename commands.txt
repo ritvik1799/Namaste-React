@@ -519,4 +519,14 @@ EPISODE 8 : Let's get classy
 ## component is unmounted). If we make the callback function as `async`, it will return a `promise` and the promise will affect the 
 ## clean-up function from being called.
 
+------------------------------------------------------------------------------------------------------------------------------------
+
+EPISODE 9 : Optimising Our app
+
+- Custom Hooks
+- Modularity in Code
+- Modular Bundling
+- Code Splitting
+- Lazy Loading
+
 
